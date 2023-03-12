@@ -18,7 +18,7 @@
     </form>
     <form action="/todo/delete" method="POST">
     
-      <% todo.forEach( (list) => { %>
+      <% (todo || []).forEach( (list) => { %>
         <div class="alert alert-light">
           <input type="checkbox" class="form-check-input mt-2" name="todo" value="<%= counter %>">
           <h4 class="d-inline">> </h4> <strong><%= list %></strong>
